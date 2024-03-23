@@ -1,0 +1,98 @@
+body {
+  overflow: hidden;
+}
+.porfor_main {
+  height: 250px;
+  width: 100%;
+  overflow: scroll;
+}
+.main {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  width: 185%;
+}
+.month-grid-container {
+  display: flex;
+  position: relative;
+  overflow: hidden; /* Hide overflow to prevent horizontal scrolling */
+}
+.grid {
+  position: relative;
+  display: flex;
+}
+.month-grid {
+  flex: 0 0 calc(100% / 12); /* Each month grid occupies 1/12th of the container */
+  box-sizing: border-box; /* Include border in width calculation */
+  border: 0.6px solid #dfdfdfa2;
+  text-align: center;
+  display: block;
+  padding: 10px 0;
+  height: 39px; /* Add padding to center month names vertically */
+}
+.date-range-line {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  background-color: rgb(143 198 249 / 57%);
+  border-radius: 4px;
+  padding: 6px 0;
+}
+.porform-calender {
+  position: absolute;
+  top: 0;
+  left: 8%;
+  right: 0%;
+}
+.title {
+  top: 0;
+  left: 0;
+  position: sticky;
+  width: 8%;
+  z-index: 1;
+  color: rgb(47, 161, 255);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.title_grid {
+  padding: 10px 0;
+  height: 39px;
+  box-sizing: border-box; /* Include border in width calculation */
+  border: 0.6px solid #eaeaeadc;
+  text-align: center;
+}
+.action {
+  left: 100%;
+  transform: translateY(100%);
+  position: sticky;
+  width: 141px;
+  background-color: red;
+  z-index: 1;
+}
+.action_grid {
+  padding: 10px 0;
+  height: 39px;
+  box-sizing: border-box; /* Include border in width calculation */
+  border: 0.6px solid #bababa;
+  text-align: center;
+}
+.header {
+  position: sticky;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  display: block;
+  height: 39px;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(47, 161, 255);
+  width: 8%;
+  background-color: white;
+}
+.header-container {
+  display: flex;
+}
